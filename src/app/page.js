@@ -1,11 +1,29 @@
+"use client"
 import Image from "next/image";
 import AvatarImg from "@/../public/Avatar.png";
+import HeartImg from "@/../public/heart.png";
+import { useState } from "react";
+
 
 export default function Home() {
+
+const [heart, setHeart] = useState(0);
+
+const addHeart = function(){
+  setHeart(heart+1);
+}
+
+
+
   return (
-    <div className="w-full h-full bg-white flex justify-center items-center rounded-2xl">
+    <div className=" flex w-full h-full bg-white flex-col justify-center items-center rounded-2xl">
       
-      <p>HOME</p>
+      <div className="cursor-pointer flex flex-col justify-center items-center"
+        onClick={addHeart}
+      >
+        <Image src={HeartImg} className="w-[68px]" alt="heart" />
+      </div>
+      <div className=" text-2xl flex flex-col justify-center items-center"> { heart } </div>
       
     </div>
   );
