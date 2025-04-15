@@ -1,0 +1,81 @@
+import Image from "next/image";
+import AvatarImg from "@/../public/Avatar.png";
+import Painting1 from "@/image/1.png";
+import Painting2 from "@/image/2.png";
+import Painting3 from "@/image/3.png";
+import Painting4 from "@/image/4.png";
+
+
+export default function CatePainting() {
+  return (
+    <div className="w-full h-full bg-white flex-col justify-start items-center rounded-2xl py-8 px-4">
+
+      {/*<img src={Painting1.src} />*/}
+      {/*<Image src={Painting1}/*/}
+     <div className="flex-col w-full">
+
+        <h1 className="text-2xl font-bold text-[#34455B]">
+         攝影作品
+        </h1>  
+
+        <h3 className="text-[#34455B]">
+         我精彩的繪畫作品，曠世巨作，曠世奇派。
+        </h3>
+        
+        <div className="flex flex-col w-full gap-4 mt-3">
+          
+          <div className="grid grid-cols-3 w-full gap-4 h-[33vh]">
+            <div className={`col-span-2 rounded-2xl relative overflow-hidden bg-green-100`}
+                  style={{ backgroundImage: `url(${Painting1.src})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center' 
+                  }
+                  }
+            >
+              {/* <div className="w-[40px] h-[40px] rounded-full bg-red-500 absolute 
+              left-1/2 top-1/2 translate-x-1/2 translate-y-1/2 ">  
+                狗勾
+              </div> */}
+
+              <div className="w-full h-[80px] backdrop-blur-lg 
+                absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">  
+                狗勾
+              </div>
+            </div>
+
+
+            <div className="bg-green-100 rounded-2xl"
+              style={{ backgroundImage: `url(${Painting2.src})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center' }
+                    }>
+              內容二
+            </div>
+          </div>
+
+
+          <div className="grid grid-cols-2 w-full gap-4 h-[33vh]">
+              <div className="bg-green-100 rounded-2xl"
+                style={{ backgroundImage: `url(${Painting3.src})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center' }
+                      }
+              >
+                內容四
+              </div>
+              <div className="bg-green-100 rounded-2xl"
+              style={{ backgroundImage: `url(${Painting4.src})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center' }
+                    }
+              >
+                內容五
+              </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  );
+}
