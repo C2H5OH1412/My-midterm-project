@@ -27,51 +27,81 @@ export default function CatePainting() {
         <div className="flex flex-col w-full gap-4 mt-3">
           {/* 第一區塊 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full min-h-[200px]">
-            <div className="bg-green-100 rounded-2xl relative overflow-hidden" style={{ backgroundImage: `url(${Painting14.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-[#34455B] text-xl flex justify-center items-center overflow-x-hidden">田園風光</div>
+            <div className="relative overflow-hidden rounded-2xl bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${Painting14.src})` }} />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">田園風光</span>
+              </div>
             </div>
-            <div className="bg-green-100 rounded-2xl relative overflow-hidden" style={{ backgroundImage: `url(${Painting13.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-slate-200 text-xl flex justify-center items-center overflow-x-hidden">碧波蕩漾</div>
+            <div className="relative overflow-hidden rounded-2xl bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${Painting13.src})` }} />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">碧波蕩漾</span>
+              </div>
             </div>
           </div>
 
           {/* 第二區塊 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full min-h-[200px]">
-            <div className="col-span-1 md:col-span-2 rounded-2xl relative overflow-hidden bg-green-100" style={{ backgroundImage: `url(${Painting1.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-slate-200 text-xl flex justify-center items-center overflow-x-hidden">春日午後</div>
+            <div className="md:col-span-2 relative overflow-hidden rounded-2xl bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${Painting1.src})` }} />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">春日午後</span>
+              </div>
             </div>
-            <div className="rounded-2xl relative overflow-hidden bg-green-100" style={{ backgroundImage: `url(${Painting2.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-slate-200 text-xl flex justify-center items-center overflow-x-hidden">廢墟與生機</div>
+            <div className="relative overflow-hidden rounded-2xl bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${Painting2.src})` }} />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">廢墟與生機</span>
+              </div>
             </div>
           </div>
 
           {/* 第三區塊 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full min-h-[200px]">
-            <div className="bg-green-100 rounded-2xl relative overflow-hidden" style={{ backgroundImage: `url(${Painting3.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-[#34455B] text-xl flex justify-center items-center overflow-x-hidden">雨後街道</div>
+            <div className="relative overflow-hidden rounded-2xl bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${Painting3.src})` }} />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">雨後街道</span>
+              </div>
             </div>
-            <div className="bg-green-100 rounded-2xl relative overflow-hidden" style={{ backgroundImage: `url(${Painting4.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-[#34455B] text-xl flex justify-center items-center overflow-x-hidden">葡萄</div>
+            <div className="relative overflow-hidden rounded-2xl bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${Painting4.src})` }} />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">葡萄</span>
+              </div>
             </div>
           </div>
 
           {/* 第四區塊 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full min-h-[200px]">
-            <div className="rounded-2xl relative overflow-hidden bg-green-100" style={{ backgroundImage: `url(${Painting16.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-slate-200 text-xl flex justify-center items-center overflow-x-hidden">日和</div>
+            <div className="relative overflow-hidden rounded-2xl bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${Painting16.src})` }} />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">日和</span>
+              </div>
             </div>
-            <div className="md:col-span-2 bg-green-100 rounded-2xl relative overflow-hidden" style={{ backgroundImage: `url(${Painting15.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-slate-200 text-xl flex justify-center items-center overflow-x-hidden">盛宴</div>
+            <div className="md:col-span-2 relative overflow-hidden rounded-2xl bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${Painting15.src})` }} />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">盛宴</span>
+              </div>
             </div>
           </div>
 
           {/* 第五區塊 */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full min-h-[200px]">
-            <div className="bg-green-100 rounded-2xl relative overflow-hidden" style={{ backgroundImage: `url(${Painting21.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-slate-200 text-xl flex justify-center items-center overflow-x-hidden">嗯？你在看我嗎？</div>
+            <div className="relative overflow-hidden rounded-2xl bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${Painting21.src})` }} />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">嗯？你在看我嗎？</span>
+              </div>
             </div>
-            <div className="bg-green-100 rounded-2xl relative overflow-hidden" style={{ backgroundImage: `url(${Painting22.src})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-slate-200 text-xl flex justify-center items-center overflow-x-hidden">咦？我嗎？</div>
+            <div className="relative overflow-hidden rounded-2xl bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: `url(${Painting22.src})` }} />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">咦？我嗎？</span>
+              </div>
             </div>
           </div>
         </div>

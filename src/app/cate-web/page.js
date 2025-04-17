@@ -1,5 +1,4 @@
 import Image from "next/image";
-import AvatarImg from "@/../public/Avatar.png";
 import Painting5 from "@/image/5.png";
 import Painting6 from "@/image/6.png";
 import Painting7 from "@/image/7.png";
@@ -24,73 +23,84 @@ export default function CateWeb() {
 
         <div className="flex flex-col w-full gap-4 mt-3 mb-4">
           <div className="grid grid-cols-1 sm:grid-cols-3 grid-rows-3 gap-4 w-full h-auto sm:h-[600px]">
-            <div className="col-span-1 sm:col-span-2 row-span-3 rounded-2xl relative overflow-hidden bg-green-100"
+            {/* 卡片 1 */}
+            <div className="col-span-1 sm:col-span-2 row-span-3 rounded-2xl relative overflow-hidden bg-green-100 transform transition-all duration-300 hover:scale-105 hover:z-10"
               style={{
                 backgroundImage: `url(${Painting6.src})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center'
+                backgroundPosition: 'center',
+                height: '100%',
               }}>
-              <div className="w-full h-[80px] backdrop-blur-lg absolute bottom-0 left-0 text-slate-200 text-2xl flex justify-center items-center">
-                含羞帶怯
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+                <span className="text-white text-2xl font-semibold">含羞帶怯</span>
               </div>
             </div>
 
-            <div className="col-start-1 sm:col-start-3 row-span-2 rounded-2xl relative overflow-hidden bg-green-100"
+            {/* 卡片 2 */}
+            <div className="col-start-1 sm:col-start-3 row-span-2 rounded-2xl relative overflow-hidden bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10"
               style={{
                 backgroundImage: `url(${Painting5.src})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center'
+                backgroundPosition: 'center',
+                height: '100%',
               }}>
-              <div className="w-full h-[80px] backdrop-blur-lg absolute bottom-0 left-0 text-[#34455B] text-2xl flex justify-center items-center">
-                Taylor Swift
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+                <span className="text-white text-2xl font-semibold">Taylor Swift</span>
               </div>
             </div>
 
-            <div className="col-start-1 sm:col-start-3 row-start-3 rounded-2xl relative overflow-hidden bg-green-100"
+            {/* 卡片 3 */}
+            <div className="col-start-1 sm:col-start-3 row-start-3 rounded-2xl relative overflow-hidden bg-green-100 transform transition-all duration-300 hover:scale-110 hover:z-10"
               style={{
                 backgroundImage: `url(${Painting7.src})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center'
+                backgroundPosition: 'center',
+                height: '100%',
               }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-slate-200 text-xl flex justify-center items-center">
-                Donald Trump
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+                <span className="text-white text-xl font-semibold">Donald Trump</span>
               </div>
             </div>
           </div>
         </div>
 
+        {/* 第四區塊 */}
         <div className="grid w-full gap-4 min-h-[200px] mb-4">
-          <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+          <div className="bg-green-100 rounded-2xl relative overflow-hidden transform transition-all duration-300 hover:scale-105 hover:z-10"
             style={{
               backgroundImage: `url(${Painting19.src})`,
               backgroundSize: 'cover',
-              backgroundPosition: 'center'
+              backgroundPosition: 'center',
+              height: '100%',
             }}>
-            <div className="w-full h-[80px] backdrop-blur-lg absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-              氤氳
+            <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+              <span className="text-white text-2xl font-semibold">氤氳</span>
             </div>
           </div>
         </div>
 
+        {/* 第五區塊 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-4 min-h-[200px]">
-          <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+          <div className="bg-green-100 rounded-2xl relative overflow-hidden transform transition-all duration-300 hover:scale-110 hover:z-10"
             style={{
               backgroundImage: `url(${Painting18.src})`,
               backgroundSize: 'cover',
-              backgroundPosition: 'center'
+              backgroundPosition: 'center',
+              height: '100%',
             }}>
-            <div className="w-full h-[80px] backdrop-blur-lg absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-              一隅
+            <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+              <span className="text-white text-2xl font-semibold">一隅</span>
             </div>
           </div>
-          <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+          <div className="bg-green-100 rounded-2xl relative overflow-hidden transform transition-all duration-300 hover:scale-110 hover:z-10"
             style={{
               backgroundImage: `url(${Painting17.src})`,
               backgroundSize: 'cover',
-              backgroundPosition: 'center'
+              backgroundPosition: 'center',
+              height: '100%',
             }}>
-            <div className="w-full h-[80px] backdrop-blur-lg absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-              沈靜
+            <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+              <span className="text-white text-2xl font-semibold">沈靜</span>
             </div>
           </div>
         </div>

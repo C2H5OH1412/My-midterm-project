@@ -19,49 +19,54 @@ export default function CatePortrait() {
         </h3>
 
         <div className="flex flex-col w-full gap-4 mt-3">
-          <div className="grid grid-cols-1 sm:grid-cols-3 w-full gap-4">
-            <div className="col-span-1 sm:col-span-2 rounded-2xl relative overflow-hidden bg-green-100 h-[100px] sm:h-[33vh]"
-              style={{
-                backgroundImage: `url(${Painting9.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-              }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-white text-xl flex justify-center items-center">
-                高原紅
+          {/* 第一排，佔兩格與一格 */}
+          <div className="grid grid-cols-3 w-full gap-4">
+            <div className="col-span-2 relative overflow-hidden rounded-2xl h-[100px] sm:h-[33vh] transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <img
+                src={Painting9.src}
+                alt="高原紅"
+                className="w-full h-full object-cover transition-all duration-300"
+              />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">高原紅</span>
               </div>
             </div>
 
-            <div className="bg-green-100 rounded-2xl relative overflow-hidden h-[100px] sm:h-[33vh]"
-              style={{
-                backgroundImage: `url(${Painting10.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-              }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-white text-xl flex justify-center items-center">
-                豔
+            <div className="col-span-1 relative overflow-hidden rounded-2xl h-[100px] sm:h-[33vh] transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <img
+                src={Painting10.src}
+                alt="豔"
+                className="w-full h-full object-cover transition-all duration-300"
+              />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">豔</span>
               </div>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-4">
-            <div className="bg-green-100 rounded-2xl relative overflow-hidden h-[100px] sm:h-[33vh]"
-              style={{
-                backgroundImage: `url(${Painting11.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-              }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-white text-xl flex justify-center items-center">
-                會心一笑
+          {/* 第二排，兩張圖片分佔對半寬度，總寬度與上排相同 */}
+          <div className="grid grid-cols-2 w-full gap-4">
+            <div className="relative overflow-hidden rounded-2xl h-[100px] sm:h-[33vh] transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <img
+                src={Painting11.src}
+                alt="會心一笑"
+                className="w-full h-full object-cover transition-all duration-300"
+              />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <span className="text-white text-xl font-semibold">會心一笑</span>
               </div>
             </div>
-            <div className="bg-green-100 rounded-2xl relative overflow-hidden h-[100px] sm:h-[33vh]"
-              style={{
-                backgroundImage: `url(${Painting20.src})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
-              }}>
-              <div className="w-full h-[40px] backdrop-blur-lg absolute bottom-0 left-0 text-white text-xl flex justify-center items-center">
-                外公
+
+            <div className="relative overflow-hidden rounded-2xl h-[100px] sm:h-[33vh] transform transition-all duration-300 hover:scale-110 hover:z-10">
+              <img
+                src={Painting20.src}
+                alt="外公"
+                className="w-full h-full object-cover transition-all duration-300"
+              />
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg flex justify-center items-center opacity-0 transition-opacity duration-300 hover:opacity-60">
+                <div className="absolute inset-0 flex justify-center items-center opacity-100">
+                  <span className="text-white text-xl font-semibold">外公</span>
+                </div>
               </div>
             </div>
           </div>

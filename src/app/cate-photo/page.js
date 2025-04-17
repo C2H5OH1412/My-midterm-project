@@ -38,7 +38,7 @@ export default function CatePainting() {
 
         <h3 className="text-[#34455B]">
         鏡頭輕拾時光落下的碎片，<br />
-        那些不聲不響、卻柔軟得讓人心動的瞬間。<br />
+        那些不聲不響、卻能觸動內心的柔軟。<br />
         不喧嘩、不搶眼，<br />
         只是靜靜地閃爍著微光，等待著每個不期而遇的邂逅。
         </h3>
@@ -48,44 +48,41 @@ export default function CatePainting() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full min-h-[200px]">
 
         {/* 卡片 1 */}
-        <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+        <div className="relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
           style={{
             backgroundImage: `url(${PaintingD.src})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
         >
-          <div className="w-full h-[80px] backdrop-blur-lg 
-            absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-            天橋立-帆船
+          <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+          <span className="text-white text-2xl font-semibold">天橋立-帆船</span>
           </div>
         </div>
 
         {/* 卡片 2 */}
-        <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+        <div className="relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
           style={{
             backgroundImage: `url(${PaintingB.src})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
         >
-          <div className="w-full h-[80px] backdrop-blur-lg 
-            absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-            天橋立-海鷗
+          <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+            <span className="text-white text-2xl font-semibold">天橋立-海鷗</span>
           </div>
         </div>
 
         {/* 卡片 3 */}
-        <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+        <div className="relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
           style={{
             backgroundImage: `url(${PaintingC.src})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
         >
-    <div className="w-full h-[80px] backdrop-blur-lg 
-      absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-      天橋立-海景
+    <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+      <span className="text-white text-2xl font-semibold">天橋立-海景</span>
     </div>
   </div>
 </div>
@@ -94,7 +91,7 @@ export default function CatePainting() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full min-h-[200px]">
 
             
-            <div className={`col-span-2 rounded-2xl relative overflow-hidden bg-green-100`}
+            <div className={`col-span-2 rounded-2xl relative overflow-hidden transform transition-all duration-300 hover:scale-110 hover:z-10`}
                   style={{ backgroundImage: `url(${PaintingA.src})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center' 
@@ -102,14 +99,13 @@ export default function CatePainting() {
                   }
             >
 
-              <div className="w-full h-[80px] backdrop-blur-lg 
-                absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">  
-                天橋立-航道
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">  
+                <span className="text-white text-2xl font-semibold">天橋立-航道</span>
               </div>
             </div>
 
 
-            <div className={`rounded-2xl relative overflow-hidden bg-green-100`}
+            <div className={`relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10`}
                   style={{ backgroundImage: `url(${PaintingE.src})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center' 
@@ -117,9 +113,8 @@ export default function CatePainting() {
                   }
             >
 
-              <div className="w-full h-[80px] backdrop-blur-lg 
-                absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">  
-                天橋立-海鷗船長
+              <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">  
+                <span className="text-white text-2xl font-semibold">天橋立-海鷗船長</span>
               </div>
             </div>
           </div>
@@ -127,44 +122,41 @@ export default function CatePainting() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full min-h-[200px]">
 
               {/* 卡片 1 */}
-              <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+              <div className="relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
                 style={{
                   backgroundImage: `url(${PaintingF.src})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
               >
-                <div className="w-full h-[80px] backdrop-blur-lg 
-                  absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-                  採
+                <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+                  <span className="text-white text-2xl font-semibold">採</span>
                 </div>
               </div>
 
               {/* 卡片 2 */}
-              <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+              <div className="relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
                 style={{
                   backgroundImage: `url(${PaintingH.src})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
               >
-                <div className="w-full h-[80px] backdrop-blur-lg 
-                  absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-                  舞
+                <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+                  <span className="text-white text-2xl font-semibold">舞</span>
                 </div>
               </div>
 
               {/* 卡片 3 */}
-              <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+              <div className="relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
                 style={{
                   backgroundImage: `url(${PaintingG.src})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
               >
-          <div className="w-full h-[80px] backdrop-blur-lg 
-            absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-            集
+          <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+            <span className="text-white text-2xl font-semibold">集</span>
           </div>
         </div>
       </div>
@@ -173,58 +165,62 @@ export default function CatePainting() {
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full min-h-[800px]">
 
           {/* A: 佔 1,2,3 */}
-          <div className="col-span-3 row-span-1 rounded-2xl relative overflow-hidden"
+          <div className="col-span-3 row-span-1 relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-105 hover:z-10"
             style={{
               backgroundImage: `url(${PaintingM.src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}>
-            <div className="w-full h-[80px] backdrop-blur-lg absolute bottom-0 left-0 
-              text-white text-2xl flex justify-center items-center">豪德寺貓貓</div>
+            <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+                <span className="text-white text-2xl font-semibold">豪德寺貓貓</span>
+            </div>
           </div>
 
           {/* B: 格4 */}
-          <div className="col-start-1 row-start-2 rounded-2xl relative overflow-hidden"
+          <div className="col-start-1 row-start-2 relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
             style={{
               backgroundImage: `url(${PaintingK.src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}>
-            <div className="w-full h-[80px] backdrop-blur-lg absolute bottom-0 left-0 
-              text-white text-2xl flex justify-center items-center">滿坑滿谷</div>
+            <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center"
+              ><span className="text-white text-2xl font-semibold">滿坑滿谷</span></div>
           </div>
 
           {/* C: 合併5,6（兩欄） */}
-          <div className="col-span-2 row-start-2 col-start-2 rounded-2xl relative overflow-hidden"
+          <div className="col-span-2 row-start-2 col-start-2 relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
             style={{
               backgroundImage: `url(${PaintingJ.src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}>
-            <div className="w-full h-[80px] backdrop-blur-lg absolute bottom-0 left-0 
-              text-white text-2xl flex justify-center items-center">有誰混進去了！</div>
+            <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+                <span className="text-white text-2xl font-semibold">有誰混進去了！</span>
+                </div>
           </div>
 
           {/* D: 合併7,8（兩欄） */}
-          <div className="col-span-2 row-start-3 col-start-1 rounded-2xl relative overflow-hidden"
+          <div className="col-span-2 row-start-3 col-start-1 relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
             style={{
               backgroundImage: `url(${PaintingL.src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}>
-            <div className="w-full h-[80px] backdrop-blur-lg absolute bottom-0 left-0 
-              text-white text-2xl flex justify-center items-center">強迫症滿意貓貓</div>
+            <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+                <span className="text-white text-2xl font-semibold">強迫症滿意貓貓</span>
+            </div>
           </div>
 
           {/* E: 第9格 */}
-          <div className="col-start-3 row-start-3 rounded-2xl relative overflow-hidden"
+          <div className="col-start-3 row-start-3 relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
             style={{
               backgroundImage: `url(${PaintingI.src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center'
             }}>
-            <div className="w-full h-[80px] backdrop-blur-lg absolute bottom-0 left-0 
-              text-white text-2xl flex justify-center items-center">貓山貓海</div>
+            <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+                <span className="text-white text-2xl font-semibold">貓山貓海</span>
+              </div>
           </div>
         </div>
 
@@ -232,44 +228,41 @@ export default function CatePainting() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 w-full min-h-[200px]">
 
               {/* 卡片 1 */}
-              <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+              <div className="relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
                 style={{
                   backgroundImage: `url(${PaintingN.src})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
               >
-                <div className="w-full h-[80px] backdrop-blur-lg 
-                  absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-                  梅
+                <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+                  <span className="text-white text-2xl font-semibold">梅</span>
                 </div>
               </div>
 
               {/* 卡片 2 */}
-              <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+              <div className="relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10"
                 style={{
                   backgroundImage: `url(${PaintingO.src})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
               >
-                <div className="w-full h-[80px] backdrop-blur-lg 
-                  absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-                  徑
+                <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+                  <span className="text-white text-2xl font-semibold">徑</span>
                 </div>
               </div>
 
               {/* 卡片 3 */}
-              <div className="bg-green-100 rounded-2xl relative overflow-hidden"
+              <div className="relative overflow-hidden rounded-2xl transform transition-all duration-300 hover:scale-110 hover:z-10s"
                 style={{
                   backgroundImage: `url(${PaintingP.src})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center'
                 }}
               >
-          <div className="w-full h-[80px] backdrop-blur-lg 
-            absolute bottom-0 left-0 text-white text-2xl flex justify-center items-center">
-          櫻
+          <div className="absolute inset-0 bg-[#34455B] bg-opacity-50 backdrop-blur-lg opacity-0 transition-opacity duration-300 hover:opacity-60 flex justify-center items-center">
+          <span className="text-white text-2xl font-semibold">櫻</span>
           </div>
         </div>
       </div>

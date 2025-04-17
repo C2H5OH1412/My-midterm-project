@@ -3,15 +3,15 @@ import AvatarImg from "@/../public/Avatar.png";
 
 export default function AboutPage() {
   return (
-    <div className="w-full flex-1 max-h-screen bg-slate-200 p-8 rounded-2xl overflow-y-auto">
+    <div className="w-full h-[100vh] bg-slate-200 p-8 rounded-2xl overflow-y-auto">
 
       
-      <div className="bg-slate-200 p-6 rounded-2xl space-y-6">
+      <div className="bg-slate-200 rounded-2xl space-y-6">
 
         {/* 頂部標題區 */}
         <div className="flex items-center gap-4">
-          <div className="w-6 h-6 rounded-full bg-[#E8D9D1]"></div>
-          <h1 className="text-2xl font-bold text-[#34455B]">About Me</h1>
+         {/*  <div className="w-6 h-6 rounded-full bg-[#E8D9D1]"></div> */}
+          <h1 className="text-3xl font-bold text-[#34455B]">About Me</h1>
         </div>
 
         {/* 自我介紹卡片 */}
@@ -50,44 +50,49 @@ export default function AboutPage() {
 
   {/* Instagram */}
   <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-     className="flex items-center gap-4 hover:text-blue-700 transition">
-    <img src="/icon/instagram.svg" alt="Instagram" className="w-6 h-6 cursor-pointer hover:scale-110 transition-transform" />
+     className="flex items-center gap-4 hover:text-xl hover:font-bold transition">
+    <img src="/icon/instagram.svg" alt="Instagram" className="w-6 h-6 cursor-pointer hover:scale-150 transition-transform" />
     <span>日常生活看這邊</span>
   </a>
 
   {/* Facebook */}
   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
-     className="flex items-center gap-4 hover:text-blue-700 transition">
-    <img src="/icon/facebook.svg" alt="Facebook" className="w-6 h-6 cursor-pointer hover:scale-110 transition-transform" />
-    <span>日常生活看這邊</span>
+     className="flex items-center gap-4 hover:text-xl hover:font-bold transition">
+    <img src="/icon/facebook.svg" alt="Facebook" className="w-6 h-6 cursor-pointer hover:scale-150 transition-transform" />
+    <span>日常生活也可以看這邊</span>
   </a>
 
   {/* LINE */}
   <a href="https://line.me" target="_blank" rel="noopener noreferrer"
-     className="flex items-center gap-4 hover:text-green-600 transition">
-    <img src="/icon/line.svg" alt="LINE" className="w-6 h-6 cursor-pointer hover:scale-110 transition-transform" />
+     className="flex items-center gap-4 hover:text-xl hover:font-bold transition">
+    <img src="/icon/line.svg" alt="LINE" className="w-6 h-6 cursor-pointer hover:scale-150 transition-transform" />
     <span>無聊聊天敲這邊</span>
   </a>
 
   {/* Email */}
-  <a href="mailto:you@example.com" className="flex items-center gap-4 hover:text-[#34455B] transition">
-    <img src="/icon/email.svg" alt="Email" className="w-6 h-6 cursor-pointer hover:scale-110 transition-transform" />
+  <a href="mailto:you@example.com" className="flex items-center gap-4 hover:text-xl hover:font-bold transition">
+    <img src="/icon/email.svg" alt="Email" className="w-6 h-6 cursor-pointer hover:scale-150 transition-transform" />
     <span>合作聯絡這邊請</span>
   </a>
 
   {/* 抖內 */}
   <a href="https://paypal.me/yourlink" target="_blank" rel="noopener noreferrer"
-     className="flex items-center gap-4 hover:text-yellow-600 transition">
-    <img src="/icon/money.svg" alt="Donate" className="w-6 h-6 cursor-pointer hover:scale-110 transition-transform" />
+     className="flex items-center gap-4 hover:text-xl hover:font-bold transition">
+    <img src="/icon/money.svg" alt="Donate" className="w-6 h-6 cursor-pointer hover:scale-150 transition-transform" />
     <span>抖內強烈歡迎</span>
   </a>
 </div>
 
 
         {/* 不重要碎碎念卡片 */}
-        <div className="bg-[#C4D1DB] p-4 rounded-2xl text-[#34455B] text-lg font-semibold">
-          不重要碎碎念
+        <div className="bg-[#C4D1DB] p-4 rounded-2xl text-[#34455B] text-l">
+          <p className="text-[#34455B] leading-relaxed whitespace-pre-wrap">
+            <span className="font-bold">不重要碎碎唸：</span><br />
+            程式小廢物做到快死ㄌ。<br />
+            已經非常努力ㄌ 真的QQ<br />
+          </p>
         </div>
+
       </div>
     </div>
   );
