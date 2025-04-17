@@ -1,5 +1,5 @@
+"use client";
 import Image from "next/image";
-import AvatarImg from "@/../public/Avatar.png";
 import Painting9 from "@/image/9.png";
 import Painting10 from "@/image/10.png";
 import Painting11 from "@/image/11.png";
@@ -20,8 +20,8 @@ export default function CatePortrait() {
 
         <div className="flex flex-col w-full gap-4 mt-3">
           {/* 第一排，佔兩格與一格 */}
-          <div className="grid grid-cols-3 w-full gap-4">
-            <div className="col-span-2 relative overflow-hidden rounded-2xl h-[100px] sm:h-[33vh] transform transition-all duration-300 hover:scale-110 hover:z-10">
+          <div className="grid grid-cols-1 sm:grid-cols-3 w-full gap-4">
+            <div className="col-span-1 sm:col-span-2 relative overflow-hidden rounded-2xl h-[100px] sm:h-[33vh] transform transition-all duration-300 hover:scale-110 hover:z-10">
               <img
                 src={Painting9.src}
                 alt="高原紅"
@@ -32,7 +32,7 @@ export default function CatePortrait() {
               </div>
             </div>
 
-            <div className="col-span-1 relative overflow-hidden rounded-2xl h-[100px] sm:h-[33vh] transform transition-all duration-300 hover:scale-110 hover:z-10">
+            <div className="col-span-1 sm:col-span-1 relative overflow-hidden rounded-2xl h-[100px] sm:h-[33vh] transform transition-all duration-300 hover:scale-110 hover:z-10">
               <img
                 src={Painting10.src}
                 alt="豔"
@@ -45,7 +45,7 @@ export default function CatePortrait() {
           </div>
 
           {/* 第二排，兩張圖片分佔對半寬度，總寬度與上排相同 */}
-          <div className="grid grid-cols-2 w-full gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-4">
             <div className="relative overflow-hidden rounded-2xl h-[100px] sm:h-[33vh] transform transition-all duration-300 hover:scale-110 hover:z-10">
               <img
                 src={Painting11.src}

@@ -33,7 +33,7 @@ export default function Home() {
       </div>
 
       <div className="text-xl font-semibold text-center text-[#34455b] opacity-80 z-10">
-        <p>點擊愛心給我鼓勵🩵</p>
+        <p>如果喜歡我的作品 可以點擊愛心！🩵</p>
       </div>
     </div>
   );

@@ -43,9 +43,9 @@ export default function RootLayout({ children }) {
 
           <div className="w-full sm:w-[480px] max-h-screen sm:max-h-screen rounded-2xl bg-[#CDD8E1] flex flex-col justify-start items-center p-[30px] pt-[80px] overflow-y-auto overflow-x-hidden">
 
-            <Image src={AvatarImg} alt="Avatar" className="w-[80px] h-[80px] rounded-full" />
+            <Image src={AvatarImg} alt="Avatar" className="w-[120px] h-[120px] rounded-full" />
         
-            <h1 className="mt-2 text-[#34455b]">陳盈錞</h1>
+            <h1 className="mt-2 text-[#34455b] font-semibold text-2xl">陳盈錞</h1>
             <p className="max-w-[380px] text-center text-[#34455b]">
               我是一顆沙發馬鈴薯，近期目標是睡飽，最期待放假（打滾打滾打滾）。
             </p>
